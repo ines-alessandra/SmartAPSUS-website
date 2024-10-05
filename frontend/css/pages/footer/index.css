@@ -1,0 +1,161 @@
+footer {
+    background-color: var(--green);
+    padding: 10px 40px;
+    /* gap: 20px; */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    height: 10.4rem;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: var(--text);
+    background: none;
+    padding: 0;
+    gap: 1rem;
+}
+
+.left-section a {
+    display: flex;
+    align-items: center;
+    margin: -20px 0;
+    text-decoration: none;
+    background: none;
+}
+
+.left-section a img {
+    height: 9rem;
+    width: 9rem;
+    background: none;
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
+.left-section p {
+    background: none;
+    display: inline;
+    margin-bottom: -4rem;
+}
+
+.right-section {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    background: none;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.right-section a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 2px solid var(--text);
+    background: none;
+}
+
+.right-section a span {
+    font-size: 1rem;
+    background: none;
+}
+
+.right-section a:hover img {
+    content: url('../../../images/seta-verde-footer.svg');
+    height: auto;
+    /* filter: invert(55%) sepia(90%) saturate(5000%) hue-rotate(55deg) brightness(100%) contrast(120%); */
+    /* filter: invert(15%) sepia(36%) saturate(5123%) hue-rotate(56deg) brightness(190%) contrast(120%); */
+    /* background: #000; */
+    /* background: none;
+    border-radius: 50%;
+    padding: 0;
+    margin-bottom: 2px; */
+}
+
+.right-section a img {
+    height: 1.5rem;
+    width: 1.5rem;
+    background: none;
+    border-radius: 50%;
+    padding: 0;
+    margin-bottom: 2px;
+}
+
+.footer-logo {
+    max-width: 100px;
+    background: transparent;
+}
+
+/* Responsividade para o Footer */
+@media (max-width: 1024px) {
+    footer {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column; /* Organizar em coluna para telas menores */
+        align-items: center;
+        height: auto; /* Ajuste da altura */
+    }
+
+    .right-section {
+        flex-direction: column; /* Organizar os itens de cada seção em coluna */
+        align-items: center;
+        width: 100%;
+        padding-top: 1rem;
+    }
+
+    .left-section {
+        width: 100%;
+        align-items: center;
+        margin-bottom: -2rem;
+        padding-top: 0rem;
+        margin-right: 8rem;
+    }
+
+    .left-section a, .right-section a {
+        margin-bottom: 0.4rem; /* Espaçamento entre os links */
+    }
+
+    .right-section a span {
+        font-size: 1rem; /* Ajustar o tamanho do texto */
+    }
+
+    .right-section a img {
+        height: 1rem; /* Ajustar o tamanho do ícone */
+        width: 1rem;
+    }
+
+    .left-section img {
+        vertical-align: middle; /* Alinhar verticalmente com o texto */
+        width: auto; /* Ajustar a largura automaticamente */
+        height: 10px; /* Definir uma altura consistente */
+        max-width: 900%; /* Garante que a imagem não ultrapasse o tamanho do container */
+    }
+    
+    .left-section p {
+        display: inline-block; /* Manter o texto na mesma linha da imagem */
+        margin-left: -25px; /* Aumentar o espaçamento entre a logo e o texto */
+        font-size: 1rem; /* Ajustar o tamanho da fonte do email */
+        vertical-align: middle; /* Alinhar verticalmente com a imagem */
+    }
+}

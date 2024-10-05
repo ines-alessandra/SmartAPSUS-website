@@ -1,0 +1,7 @@
+REFRESH_TOKEN= # sera gerado na primeira vez que rodar o servidor
+CLIENT_ID=m #YOUR_APP_KEY
+CLIENT_SECRET: #YOUR_APP_SECRET
+
+# para descobrir como pegar esse valor, acesse: https://github.com/FranklinThaker/Dropbox-API-Uninterrupted-Access
+ACCESS_CODE_FROM_STEP_1=
+

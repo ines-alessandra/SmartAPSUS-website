@@ -1,0 +1,9 @@
+body, html{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    margin: 0
+}
+
+h1, p {
+    margin: 0
+}

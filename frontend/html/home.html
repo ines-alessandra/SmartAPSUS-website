@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global/global.css">
+    <link rel="stylesheet" href="../css/pages/home/index.css">
+
+    <script src="https://unpkg.com/dropbox/dist/Dropbox-sdk.min.js"></script>
+    <script src="https://unpkg.com/instafeed.js@2.0.0"></script>
+    <script src="../js/menu.js" defer></script> 
+
+    <title>SmartAPSUS</title>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="header-title">
+                <h1 id="first-title">SMART <br><span id="second-title">APSUS</span></h1>
+                <p>EXPLORANDO DADOS HISTÓRICOS, DEMOGRÁFICOS E EPIDEMIOLÓGICOS PARA OTIMIZAR A LOCALIZAÇÃO,
+                    COBERTURA E DIMENSIONAMENTO DE PROFISSIONAIS E SERVIÇOS DE SAÚDE NA ATENÇÃO PRIMÁRIA A SAÚDE.</p>
+                <a href="pagina_plataforma.html" class="button-link">ACESSE NOSSA PLATAFORMA <img
+                        src="../css/pages/home/assets/seta-button.svg" alt="plataforma" class="icon"></a>
+            </div>
+            <div class="header-images">
+                <img src="../images/home/Online-world-amico.svg" alt="Home Log" class="home-img">
+            </div>
+        </div>
+
+        <div class="information-container">
+            <div class="image-container">
+                <img src="../images/home/Innovation-amico.svg" alt="Home Log" class="home-log-img">
+            </div>
+            <div class="description">
+                <h2>QUEM NÓS SOMOS?</h2>
+                <p>Somos uma equipe de pesquisadores da Universidade Federal do Agreste de Pernambuco, 
+                    liderada pelo Professor Dimas Cassimiro do Nascimento Filho, dedicada a aplicar técnicas 
+                    de Otimização e Aprendizado de Máquina para melhorar a alocação de recursos e o dimensionamento 
+                    de demandas na Atenção Primária à Saúde (APS). Nosso projeto, financiado pelo Departamento de Ciência 
+                    e Tecnologia, da Secretaria de Ciência, Tecnologia, Inovação e Complexo da Saúde, do Ministério da Saúde 
+                    (Decit/SECTICS/MS), por meio da Chamada Nº 21/2023 - Estudos Transdisciplinares em Saúde Coletiva -, 
+                    abrange áreas essenciais como a integração de dados, otimização espacial, monitoramento de indicadores-chave 
+                    e o desenvolvimento de software especializado para suporte à tomada de decisões estratégicas no campo da saúde pública. 
+                </p>
+            </div>
+        </div>
+
+        <div class="information-container1">
+            <div class="description">
+                <!-- <div class="description-text"> -->
+                <h2>NOSSOS OBJETIVOS</h2>
+                <p>Em nossos objetivos, buscamos integrar dados públicos, desenvolver algoritmos de otimização, 
+                    prever demandas futuras, aprimorar a gestão das unidades de APS e criar softwares para suportar 
+                    decisões estratégicas. Financiado pelo Ministério da Saúde (Decit/SECTICS/MS) através da Chamada 
+                    Nº 21/2023, o projeto visa contribuir para o desenvolvimento científico e tecnológico do Brasil, 
+                    abordando desigualdades em saúde e promovendo a equidade. Alinhado com a Agenda 2030 e a abordagem 
+                    One Health, também enfatiza a importância de uma comunicação efetiva para aplicar as evidências científicas 
+                    na criação e melhoria de políticas públicas no SUS, com foco em saúde digital, vigilância em saúde e gestão 
+                    de políticas públicas.</p>
+                <!-- </div> -->
+                <!-- <div class="btn-container">
+                    <a href="#" class="plataform-btn">ACESSE NOSSA PLATAFORMA <img src="../images/seta-footer.svg" alt="plataforma" class="icon"></a>
+                </div> -->
+            </div>
+            <div class="image-container">
+                <img src="../images/home/Mental-health-amico.svg" alt="Home Log" class="home-log-img">
+            </div>
+        </div>
+
+        <div class="features">
+            <h2>NOSSAS PRINCIPAIS FUNCIONALIDADES</h2>
+            <div class="features-container">
+                <div class="feature-box-blue">
+                    <div class="card-text">
+                        <p>OTIMIZAR O DIMENSIONAMENTO DE PROFISSIONAIS EM UNIDADES DE ATENÇÃO PRIMÁRIA À SAÚDE</p>
+                        <a href="../html/arquitetura.html" class="vector-link">
+                            <div class="vector-img"></div>
+                            Leia mais
+                        </a>
+                    </div>
+                    <div class="circle">
+                        <img src="../images/home/health-svgrepo-com.svg" alt="Ícone 1" class="feature-icon">
+                    </div>
+                </div>
+                <div class="feature-box-green">
+                    <div class="card-text">
+                        <p>REALIZAR A PREVISÃO DE DEMANDAS FUTURAS POR ATENDIMENTOS NAS UNIDADES DE ATENÇÃO PRIMÁRIA À SAÚDE</p>
+                        <a href="../html/arquitetura.html" class="vector-link">
+                            <div class="vector-img"></div>
+                            Leia mais
+                        </a>
+                    </div>
+                    <div class="circle">
+                        <img src="../images/home/calendar-xmark-svgrepo-com.svg" alt="Ícone 2" class="feature-icon">
+                    </div>
+                </div>
+                <div class="feature-box-green">
+                    <div class="card-text">
+                        <p>PRODUZIR RELATÓRIOS PARA AUXILIAR NA AVALIAÇÃO DE EFICIÊNCIA OPERACIONAL E FINANCEIRA DAS UNIDADES DE ATENÇÃO PRIMÁRIA À SAÚDE</p>
+                        <a href="../html/arquitetura.html" class="vector-link">
+                            <div class="vector-img"></div>
+                            Leia mais
+                        </a>
+                    </div>
+                    <div class="circle">
+                        <img src="../images/home/dashboard-svgrepo-com.svg" alt="Ícone 3" class="feature-icon">
+                    </div>
+                </div>
+                <div class="feature-box-blue">
+                    <div class="card-text">
+                        <p>OTIMIZAR A LOCALIDADE DE UNIDADES DE ATENÇÃO PRIMÁRIA À SAÚDE</p>
+                        <a href="../html/arquitetura.html" class="vector-link">
+                            <div class="vector-img"></div>
+                            Leia mais
+                        </a>
+                    </div>
+                    <div class="circle">
+                        <img src="../images/home/location-svgrepo-com.svg" alt="Ícone 4" class="feature-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="articles">
+            <h2>PUBLICAÇÕES CIENTÍFICAS</h2>
+            <p>VEJA TODAS AS NOSSAS PUBLICAÇÕES CIENTÍFICAS</p>
+            <div class="articles-container" id="carousel">
+                <!-- <div class="article-box">
+                    <div class="article-image"></div>
+                    <div class="article-info">
+                        <h3>TÍTULO DA PUBLICAÇÃO 3</h3>
+                        <p>03/03/03</p>
+                    </div>
+                    <button class="read-more">LEIA MAIS</button>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2>NOSSO TIME</h2>
+            <div class="team-carousel">
+                <div class="team-container">
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Dimas.jpg');"></div>
+                        <h3>Dimas Cassimiro do Nascimento Filho</h3>
+                        <p>Coordenador Geral</p>
+                        <a href="https://github.com/dimascnf" class="github-link">
+                            <img src="../images/github-logo.svg" alt="GitHub Icon"> dimascnf
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Igor.jpg');"></div>
+                        <h3>Igor Medeiros Vanderlei</h3>
+                        <p>Líder da Equipe de Desenvolvimento</p>
+                        <a href="https://github.com/igorvanderlei" class="github-link">
+                            <img src="../images/github-logo.svg" alt="GitHub Icon"> igorvanderlei
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Daliton.jpeg');"></div>
+                        <h3>Daliton da Silva</h3>
+                        <p>Líder da Equipe de Desenvolvimento</p>
+                        <a href="http://lattes.cnpq.br/6513070331492998" class="github-link">
+                            <img src="../images/lattes.png" alt="GitHub Icon"> lattes
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/danillobion.png');"></div>
+                        <h3>Danillo José Miranda Bion de Lima</h3>
+                        <p>Design UI/UX</p>
+                        <a href="https://github.com/danillobion" class="github-link">
+                            <img src="../images/github-logo.svg" alt="GitHub Icon"> danillobion
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/thiago_felipe.jpg');"></div>
+                        <h3>Thiago Felipe da Silva Pinheiro</h3>
+                        <p>Membro da Equipe de Desenvolvimento</p>
+                        <a href="https://github.com/tfelipebr" class="github-link">
+                            <img src="../images/github-logo.svg" alt="GitHub Icon"> tfelipebr
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Thiago-Fabricio.jpeg');"></div>
+                        <h3>Thiago Fabricio de Oliviera</h3>
+                        <p>Membro da Equipe de Desenvolvimento</p>
+                        <a href="https://github.com/ThFabricio" class="github-link">
+                            <img src="../images/github-logo.svg" alt="GitHub Icon"> ThFabricio
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Magno.jpeg');"></div>
+                        <h3>Mágno Sillas Nunes Ramos Gomes</h3>
+                        <p>Membro da Equipe de Desenvolvimento</p>
+                        <a href="https://github.com/magnosillas" class="github-link">
+                            <img src="../images/github-logo.svg" alt="GitHub Icon"> magnosillas
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Fabio.jpeg');"></div>
+                        <h3>Fábio Guerra Medeiros Filho</h3>
+                        <p>Membro da Equipe de Desenvolvimento</p>
+                        <a href="http://lattes.cnpq.br/9695504897290865" class="github-link">
+                            <img src="../images/lattes.png" alt="GitHub Icon"> lattes
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Esau.jpeg');"></div>
+                        <h3>Esau Bermudez Sanchez</h3>
+                        <p>Membro da Equipe de Desenvolvimento</p>
+                        <a href="http://lattes.cnpq.br/6040354528201914" class="github-link">
+                            <img src="../images/lattes.png" alt="GitHub Icon"> lattes
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/thiago_nobrega.jpeg');"></div>
+                        <h3>Thiago Pereira da Nóbrega</h3>
+                        <p>Membro da Equipe de Desenvolvimento</p>
+                        <a href="http://lattes.cnpq.br/5048923517404787" class="github-link">
+                            <img src="../images/lattes.png" alt="GitHub Icon"> lattes
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Veruska.png');"></div>
+                        <h3>Veruska Borges Santos</h3>
+                        <p>Líder da Equipe de Análise de Dados</p>
+                        <a href="https://github.com/veruskasantos" class="github-link">
+                            <img src="../images/github-logo.svg" alt="GitHub Icon"> veruskasantos
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Luis-Felipe.jpeg');"></div>
+                        <h3>Luis Filipe Alves Pereira</h3>
+                        <p>Colaborador na Equipe de Análise de Dados</p>
+                        <a href="https://github.com/luisfilipeap" class="github-link">
+                            <img src="../images/github-logo.svg" alt="GitHub Icon"> luisfilipeap
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/ines.jpeg');"></div>
+                        <h3>Ines Alessandra Alves de Melo</h3>
+                        <p>Membro da Equipe de Análise de Dados</p>
+                        <a href="https://github.com/ines-alessandra" class="github-link">
+                            <img src="../images/github-logo.svg" alt="GitHub Icon"> ines-alessandra
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/luann.jpeg');"></div>
+                        <h3>Luann Bento Ferreira</h3>
+                        <p>Membro da Equipe de Análise de Dados</p>
+                        <a href="https://github.com/LuoLuann" class="github-link">
+                            <img src="../images/github-logo.svg" alt="GitHub Icon"> LuoLuann
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Izabel.JPG');"></div>
+                        <h3>Izabel Yale Neves Nascimento</h3>
+                        <p>Membro da Equipe de Análise de Dados</p>
+                        <a href="https://github.com/izabelnascimento" class="github-link">
+                            <img src="../images/github-logo.svg" alt="GitHub Icon"> izabelnascimento
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Matheus-Marcos.jpg');"></div>
+                        <h3>Matheus Marcos Joel da Silva</h3>
+                        <p>Membro da Equipe de Análise de Dados</p>
+                        <a href="https://github.com/Matheusxr77" class="github-link">
+                            <img src="../images/github-logo.svg" alt="GitHub Icon"> Matheusxr77
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Mayara.jpg');"></div>
+                        <h3>Mayara Karoline Eufrásio Ferreira</h3>
+                        <p>Membro da Equipe de Análise de Dados</p>
+                        <a href="https://github.com/mayeufraferreira" class="github-link">
+                            <img src="../images/github-logo.svg" alt="GitHub Icon"> mayeufraferreira
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Rian.jpeg');"></div>
+                        <h3>Rian Gabriel Santos Pinheiro</h3>
+                        <p>Líder da Equipe de Otimização</p>
+                        <a href="http://lattes.cnpq.br/1447954471683870" class="github-link">
+                            <img src="../images/lattes.png" alt="GitHub Icon"> lattes
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Gabriela.jpeg');"></div>
+                        <h3>Gabriela Batista Tenório das Neves</h3>
+                        <p>Membro da Equipe de Otimização</p>
+                        <a href="http://lattes.cnpq.br/8308843855586900" class="github-link">
+                            <img src="../images/lattes.png" alt="GitHub Icon"> lattes
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Bruno.jpeg');"></div>
+                        <h3>Bruno José da Silva Barros</h3>
+                        <p>Membro da Equipe de Otimização</p>
+                        <a href="http://lattes.cnpq.br/1748849420966905" class="github-link">
+                            <img src="../images/lattes.png" alt="GitHub Icon"> lattes
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Mateus_aristides.jpeg');"></div>
+                        <h3>Mateus Aristides Honorato dos Santos</h3>
+                        <p>Membro da Equipe de Otimização</p>
+                        <a href="http://lattes.cnpq.br/2713696909139098" class="github-link">
+                            <img src="../images/lattes.png" alt="GitHub Icon"> lattes
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Luciana.jpg');"></div>
+                        <h3>Luciana Karla Vanderley Lima</h3>
+                        <p>Líder da Equipe de Consultoria de Saúde</p>
+                        <a href="http://lattes.cnpq.br/3388893491018922" class="github-link">
+                            <img src="../images/lattes.png" alt="GitHub Icon"> lattes
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/Ana-Emilia.jpeg');"></div>
+                        <h3>Ana Emília de Souza Cassiano</h3>
+                        <p>Membro da Equipe de Consultoria de Saúde</p>
+                        <a href="http://lattes.cnpq.br/9880289645281000" class="github-link">
+                            <img src="../images/lattes.png" alt="GitHub Icon"> lattes
+                        </a>
+                    </div>
+                    <div class="team-card">
+                        <div class="profile-pic" style="background-image: url('../images/nathalia.jpeg');"></div>
+                        <h3>Nathalia Diniz de Moura</h3>
+                        <p>Membro da Equipe de Consultoria de Saúde</p>
+                        <a href="http://lattes.cnpq.br/1903269001654109" class="github-link">
+                            <img src="../images/lattes.png" alt="GitHub Icon"> lattes
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="publications">
+            <h2>NOSSAS POSTAGENS</h2>
+            <p class="paragrafo">VEJA TODAS AS POSTAGENS</p>
+            <div class="publications-container" id="carousel-socials">
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2>COMO ENTRAR EM CONTATO</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p><strong>EMAIL</strong><br>smartapsus@gmail.com</p>
+                    <p><strong>ENDEREÇO</strong><br>Av. Bom Pastor, s/n - Boa Vista, 55292-270<br>Garanhuns - PE</p>
+                </div>
+                <img src="./../images/maps2.png" class="contact-map" />
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+    <script src="../js/carousel-team.js"></script>
+
+    <script>
+        // Carrega a navbar
+        fetch('nav-bar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+
+        // Carrega o footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+
+    <script src="../js/dropbox.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var docs = listFiles('/artigos', 'carousel')
+        })
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async function () {
+            const response = await fetch('http://localhost:3000/get-insta-infos');
+            const data = await response.json();
+
+            var feed = new Instafeed({
+                accessToken: data.insta_token,
+                userId: data.insta_user_id,
+                limit: 3,
+                target: 'carousel-socials',
+                template: `
+                    <div class="rede-social-card">
+                        <img src="{{image}}" alt="{{caption}}">                            
+                        <a href="{{link}}" class="rede-social-card-container" target="_blank">
+                            <h1>@smartapsus</h1>
+                            <p>{{caption}}</p>
+                        </a>
+                        <button class="read-more" onclick="window.open('{{link}}', '_blank')">LEIA MAIS</button>
+                    </div>
+                `
+            });
+            feed.run();
+        });
+    </script>
+</body>
+
+</html>

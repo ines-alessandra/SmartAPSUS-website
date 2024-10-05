@@ -1,0 +1,21 @@
+version: '3'
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    networks:
+      - app-network
+
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+    env_file:
+      - ./backend/.env  # Adicione esta linha para carregar as variáveis do arquivo .env
+
+networks:
+  app-network:
+    driver: bridge

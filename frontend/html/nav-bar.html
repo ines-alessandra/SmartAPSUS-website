@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Responsivo</title>
+    <!-- Links para os arquivos CSS -->
+    <link rel="stylesheet" href="../css/global/global.css">
+    <link rel="stylesheet" href="../css/pages/nav-bar/index.css">
+    <!-- Link para o arquivo JS -->
+    <script src="../js/menu.js" defer></script>
+</head>
+
+<body>
+    <!-- Cabeçalho fixo com ícone de menu hamburger (apenas para telas menores) -->
+    <header>
+        <div class="menu-icon" id="menu-btn" onclick="toggleMenu()">
+            <img src="../images/hamburguer-icon.jpg" alt="Menu">
+        </div>
+        <!-- Logo -->
+        <a href="home.html"><img src="../images/logo.png" alt="Logo" class="logo"></a>
+    </header>
+
+    <!-- Overlay para o menu móvel -->
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay">
+        <!-- Menu lateral que aparece ao clicar no hamburger (apenas em telas menores) -->
+        <nav id="mobile-menu" class="mobile-menu" onclick="event.stopPropagation()">
+            <ul>
+                <li class="list-item"><a href="home.html">HOME</a></li>
+                <li class="list-item"><a href="arquitetura.html">ARQUITETURA DO SISTEMA</a></li>
+                <li class="list-item"><a href="publicacao.html">NOSSAS PUBLICAÇÕES</a></li>
+            </ul>
+            <ul id="second-list">
+                <li class="list-item-image"><a href="https://www.github.com"><img src="../images/github.svg" alt="GitHub"></a></li>
+                <li class="list-item-image"><a href="https://www.instagram.com/smartapsus?igsh=eXExYzZwZW9jcXli"><img src="../images/instagram.svg" alt="Instagram"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Navegação tradicional para telas maiores -->
+    <nav id="desktop-nav">
+        <ul id="first-list">
+            <li><a href="home.html"><img src="../images/logo.png" alt="Logo" class="logo"></a></li>
+            <li class="list-item"><a href="home.html">HOME</a></li>
+            <li class="list-item"><a href="arquitetura.html">ARQUITETURA DO SISTEMA</a></li>
+            <li class="list-item"><a href="publicacao.html">NOSSAS PUBLICAÇÕES</a></li>
+        </ul>
+        <ul id="second-list">
+            <li class="list-item-image"><a href="https://github.com/ines-alessandra/SmartAPSUS"><img src="../images/github.svg" alt="GitHub"></a></li>
+            <li class="list-item-image"><a href="https://www.instagram.com/smartapsus?igsh=eXExYzZwZW9jcXli"><img src="../images/instagram.svg" alt="Instagram"></a></li>
+        </ul>
+    </nav>
+
+    <!-- Seu conteúdo principal aqui -->
+
+</body>
+
+</html>

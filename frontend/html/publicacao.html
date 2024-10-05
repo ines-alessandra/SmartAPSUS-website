@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossas Publicações</title>
+    <link rel="stylesheet" href="../css/global/global.css">
+    <link rel="stylesheet" href="../css//pages/publicacao/index.css">
+
+    <script src="https://unpkg.com/dropbox/dist/Dropbox-sdk.min.js"></script>
+    <script src="https://unpkg.com/instafeed.js@2.0.0"></script>
+    <script src="../js/menu.js" defer></script> 
+
+
+<body>
+    <div id="navbar"></div>
+    <div class="container">
+
+        <h1 class="page-title">PUBLICAÇÕES CIENTIFICAS</h1>
+        <p class="page-sub-title">CONHEÇA TODAS AS NOSSAS PUBLICAÇÕES CIENTÍFICAS</p>
+
+        <div class="carousel-container">
+            <button class="action-button prev" onclick="scrollPrev('carousel-content')">❮</button>
+            <div class="carousel-content" id="carousel-content">
+            </div>
+            <button class="action-button next" onclick="scrollNext('carousel-content')">❯</button>
+        </div>
+
+        <div class="container-rede-socials">
+            <h1 class="page-title2">REDES SOCIAIS</h1>
+            <p class="page-sub-title2">CONHEÇA TODAS AS NOSSAS PUBLICAÇÕES E ATUALIZAÇÕES NAS REDES DO PROJETO</p>
+
+            <div class="carousel-container">
+                <button class="action-button2 prev" onclick="scrollPrev('carousel-socials')">❮</button>
+                <div class="carousel-content" id="carousel-socials">
+                </div>
+                <button class="action-button2 next" onclick="scrollNext('carousel-socials')">❯</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="instafeed"></div>
+
+    <div id="footer"></div>
+
+    <script src="../js/carousel.js"></script>
+    <script>
+        fetch('nav-bar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+    </script>
+
+    <script src="../js/dropbox.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            listFiles('/artigos', 'carousel-content');
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async function () {
+            const response = await fetch('http://localhost:3000/get-insta-infos');
+            const data = await response.json();
+
+            const feed = new Instafeed({
+                accessToken: data.insta_token,
+                userId: data.insta_user_id,
+                limit: 10,
+                target: 'carousel-socials',
+                template: `
+                    <div class="rede-social-card">
+                        <img src="{{image}}" alt="{{caption}}">                            
+                        <a href="{{link}}" class="rede-social-card-container" target="_blank">
+                            <h1>@smartapsus</h1>
+                            <p>{{caption}}</p>
+                        </a>
+                        <!-- <button class="read-more" onclick="window.open('{{link}}', '_blank')">LEIA MAIS</button> -->
+                    </div>
+                `
+            });
+            feed.run();
+
+        });
+    </script>
+</body>
+
+</html>

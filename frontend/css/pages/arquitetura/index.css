@@ -1,0 +1,448 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 4rem;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 20rem;
+}
+
+.header-image {
+    display: flex;
+    flex: 1;
+    width: 50%;
+    height: 250px;
+    margin-right: 0rem;
+}
+
+.log-img {
+    width: 100%;
+    height: 400px;
+    background: transparent;
+}
+
+.header-image {
+    flex: 1;
+    background-color: none;
+    height: 300px;
+    margin-right: 2rem;
+}
+
+.header-description {
+    flex: 2;
+    color: var(--text);
+}
+
+.header-description h1 {
+    padding-top: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.header-description p {
+    color: var(--text);
+    font-size: 1.05rem;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.equipe-img {
+    width: 100%;
+    height: 100%; 
+    object-fit: contain; 
+    display: block; 
+}
+
+.funcionalidades-img {
+    width: 100%;
+    height: 100%; 
+    object-fit: contain; 
+    display: block;
+    margin-left: 0rem; 
+}
+
+.header-description .button-link {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--green);
+    color: var(--text);
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button-link:hover {
+    background-color: var(--text);
+    color: var(--background);
+    transform: scale(1.005);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.button-link .icon {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 0.5rem;
+    transition: background-image 0.3s ease;
+    background-image: url('./assets/seta-button.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button-link:hover .icon {
+    background-image: url('./assets/seta-button-green.svg');
+}
+
+.tech-stack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background);
+    width: 100%;
+    padding: 2rem 0 2rem 0;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.tech-stack img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.grid-item1 {
+    display: flex;
+    height: 20rem;
+    margin-top: 2rem;
+}
+
+.grid-item2 {
+    display: flex;
+    height: 20rem;
+    margin-top: 2rem;
+}
+
+.grid-item3 {
+    display: flex;
+    height: 20rem;
+    margin-top: 2rem;
+}
+
+.grid-item4 {
+    display: flex;
+    height: 20rem;
+    margin-top: 2rem;
+}
+
+.grid-item1 .item-image {
+    flex: 1;
+    height: 18rem;
+    margin-right: 1rem;
+}
+
+.grid-item2 .item-image {
+    flex: 1;
+    height: 18rem;
+    margin-right: 1rem;
+}
+
+.grid-item3 .item-image2 {
+    flex: 1;
+    height: 18rem;
+    margin-top: -2rem;
+    margin-right: 0;
+    margin-left: -1rem;
+}
+
+.grid-item4 .item-image2 {
+    flex: 1;
+    height: 18rem;
+    margin-right: 1rem;
+    margin-top: -2rem;
+    margin-left: 0;
+}
+
+.item-description {
+    flex: 2;
+    color: var(--text);
+}
+
+.grid-item1 .item-description h2 {
+    font-size: 1.30rem;
+    font-weight: bold;
+    padding-left: 1.5rem;
+    margin-top:0;
+}
+
+.grid-item1 .item-description p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.grid-item2 .item-description h2 {
+    font-size: 1.30rem;
+    font-weight: bold;
+    padding-right: 1.5rem;
+    margin-top: 0
+}
+
+.grid-item2 .item-description p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-top: 0.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.grid-item3 .item-description h2 {
+    font-size: 1.30rem;
+    font-weight: bold;
+    padding-right: 1.5rem;
+    margin-top: 0
+}
+
+.grid-item3 .item-description p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-top: 0.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.grid-item4 .item-description h2 {
+    font-size: 1.30rem;
+    font-weight: bold;
+    padding-right: 1.5rem;
+    margin-top: 0
+}
+
+.grid-item4 .item-description p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-top: 0.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.file-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 8rem;
+    background-color: var(--blue);
+    box-sizing: border-box;
+    height: 6rem;
+    margin-top: 6rem;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.file-name {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--text);
+    margin-right: 2rem;
+    background: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.file-name:hover {
+    font-weight: 600;
+}
+
+.grid-container h1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.grid-container h5 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 1rem;
+    margin:0;
+}
+
+.container-grid {
+    margin-top: 1.5rem;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    
+    /* Container principal ajustado para tela menor */
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    /* Header ajustado para alinhar os itens verticalmente */
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header-image {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .header-description {
+        padding: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .header-description h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-description p {
+        font-size: 1rem;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    /* Ajustes nos itens do grid */
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        text-align: center ;
+    }
+
+    .grid-item1{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        height: auto;
+        width: 100%;
+        margin: 0;
+        margin-left: -20px;
+
+        p{
+            font-size: 1rem;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+    }
+
+    .grid-item2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        height: auto;
+        width: 100%;
+
+        p{
+            font-size: 1rem;
+            align-items: center;
+            padding: 0;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+    }
+
+    .grid-item3{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        height: auto;
+        width: 100%;
+
+        p{
+            font-size: 1rem;
+            align-items: center;
+            padding: 0;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+    }
+
+    .grid-item4{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        height: auto;
+        width: 100%;
+
+        p{
+            font-size: 1rem;
+            align-items: center;
+            padding: 0;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+    }
+
+    .item-image, .item-image2 {
+        width: 100%;
+        height: auto; /* Permitir que a altura seja automática */
+        margin-bottom: 1rem;
+    }
+
+    /* Grid stack de tecnologias */
+    .tech-stack {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .tech-stack img {
+        height: 3rem;
+        width: 3rem;
+    }
+}
